@@ -15,10 +15,9 @@
       当前尚未存储记录
     </view>
   </scroll-view>
-
   <!-- 底部左右双按钮区域 -->
   <view class="bottom-btn-group">
     <view class="btn-left" bindtap="goHealthData">用户健康数据</view>
-    <view class="btn-right" bindtap="goWarmMessage">暖心留言入口</view>
+    <view class="btn-right" bindtap="goWarmMsg">暖心留言入口</view>
   </view>
 </view>
