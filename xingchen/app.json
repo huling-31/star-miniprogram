@@ -1,13 +1,15 @@
 {
-  "pages": [
+  "pages":[
     "pages/login/login",
+    "pages/register/register",
     "pages/index/index",
     "pages/call/call",
     "pages/report/report",
-    "pages/historyReport/historyReport",
     "pages/reportDetail/reportDetail",
-    "pages/relationHistory/relationHistory",
-    "pages/warmMsg/warmMsg"
+    "pages/reportHistory/reportHistory",
+    "pages/historyReport/historyReport",
+    "pages/warmMsg/warmMsg",
+    "pages/relationHistory/relationHistory"
   ],
   "window": {
     "backgroundTextStyle":"light",
