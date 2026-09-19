@@ -1,31 +1,47 @@
-const app=getApp()
+const app = getApp()
 Page({
-  data:{
-    historyList:[]
+  data: {
+    reportList: []
   },
-  onShow(){
-    const list=wx.getStorageSync("historyList")||[];
-    console.log("读取历史记录",list)
+  onLoad() {
+    //身份校验：非关联方直接打回登录页
+    const ut = wx.getStorageSync("userType")
+    if (ut !== "relation") {
+      wx.redirectTo({
+        url: "/pages/login/login"
+      })
+      return
+    }
+    //读取情绪报告历史数据
+    this.loadReportData()
+  },
+  onShow() {
+    this.loadReportData()
+  },
+  loadReportData() {
+    const list = wx.getStorageSync("emotionReportList") || []
     this.setData({
-      historyList:list
+      reportList: list
     })
   },
-  goDetail(e){
-    const idx=e.currentTarget.dataset.index;
+  //跳转报告详情页
+  goDetail(e) {
+    const idx = e.currentTarget.dataset.index
     wx.navigateTo({
-      url:`/pages/reportDetail/reportDetail?index=${idx}`
+      url: `/pages/reportDetail/reportDetail?index=${idx}`
     })
   },
-  //跳转用户健康数据
-  goHealthData(){
+  //跳转暖心留言页面
+  goWarmMsg() {
     wx.navigateTo({
-      url:"/pages/report/report"
+      url: "/pages/warmMsg/warmMsg"
     })
   },
-  //暖心留言（页面已删除，临时返回主页，以后新建留言页再修改）
-  goWarmMessage(){
-    wx.navigateTo({
-      url:"/pages/warmMsg/warmMsg"
+  backLogin() {
+    //退出登录，清除本地登录标记
+    wx.clearStorageSync()
+    wx.redirectTo({
+      url: "/pages/login/login"
     })
   }
 })
