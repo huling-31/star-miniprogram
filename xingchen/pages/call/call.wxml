@@ -1,0 +1,61 @@
+<view class="call-wrap">
+  <!-- 返回主页：左上角 -->
+  <view class="top-left-back" bindtap="goHome">
+    <text class="back-icon">‹</text>
+    <text class="back-text">返回主页</text>
+  </view>
+
+  <!-- 顶部：星辰头像区域 -->
+  <view class="top-section">
+    <view class="star-avatar">星</view>
+    <view class="star-name">星辰</view>
+    <view class="star-sub">星辰愿做你心中的晨曦，陪你熬过每一段孤独的长夜</view>
+  </view>
+
+  <!-- 中间声波 -->
+  <view class="wave-section">
+    <view class="wave-bar" style="--i:1"></view>
+    <view class="wave-bar" style="--i:2"></view>
+    <view class="wave-bar" style="--i:3"></view>
+    <view class="wave-bar" style="--i:4"></view>
+    <view class="wave-bar" style="--i:5"></view>
+    <view class="wave-bar" style="--i:6"></view>
+    <view class="wave-bar" style="--i:7"></view>
+    <view class="wave-bar" style="--i:8"></view>
+    <view class="wave-bar" style="--i:9"></view>
+    <view class="wave-bar" style="--i:10"></view>
+    <view class="wave-bar" style="--i:11"></view>
+    <view class="wave-bar" style="--i:12"></view>
+    <view class="wave-bar" style="--i:13"></view>
+    <view class="wave-bar" style="--i:14"></view>
+    <view class="wave-bar" style="--i:15"></view>
+    <view class="wave-bar" style="--i:16"></view>
+    <view class="wave-bar" style="--i:17"></view>
+  </view>
+
+  <!-- 提示文字区域 -->
+  <view class="tip-section">
+    <view class="tip-top">{{tipTextTop}}</view>
+    <view class="tip-bottom">{{tipTextBottom}}</view>
+  </view>
+
+  <!-- 底部通话按钮 -->
+  <view class="btn-section">
+    <view class="circle-btn circle-btn-left" bindtap="triggerEndCall">
+      <view class="btn-icon-box end-icon">
+        <text class="phone-icon">📞</text>
+      </view>
+      <view class="btn-label">结束通话</view>
+    </view>
+    <view class="circle-btn circle-btn-right">
+      <view
+        class="btn-icon-box record-icon {{isRecording ? 'recording' : ''}}"
+        bindtouchstart="startRecord"
+        bindtouchend="stopRecord"
+      >
+        <text class="phone-icon">📟</text>
+      </view>
+      <view class="btn-label">开始通话</view>
+    </view>
+  </view>
+</view>

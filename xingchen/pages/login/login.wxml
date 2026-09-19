@@ -1,0 +1,52 @@
+<view class="login-wrap">
+  <view class="header">
+    <view class="title-main">登录</view>
+    <view class="title-sub">星辰，在这里等候你的到来</view>
+  </view>
+
+  <!-- 身份选择 -->
+  <view class="type-select">
+    <view class="radio-item {{userType==='user'?'active':''}}" bindtap="selectType" data-type="user">
+      <radio value="user" checked="{{userType==='user'}}"/>
+      <text>普通用户（倾诉者）</text>
+    </view>
+    <view class="radio-item {{userType==='relation'?'active':''}}" bindtap="selectType" data-type="relation">
+      <radio value="relation" checked="{{userType==='relation'}}"/>
+      <text>关联方（家人/老师/朋友）</text>
+    </view>
+  </view>
+
+  <!-- 普通用户表单 -->
+  <view class="form-area" wx:if="{{userType === 'user'}}">
+    <view class="form-item">
+      <text class="form-label">昵称</text>
+      <input class="form-input" model:value="{{nickName}}" placeholder="输入注册时填写的昵称" placeholder-class="input-ph"/>
+    </view>
+    <view class="form-item">
+      <text class="form-label">密码</text>
+      <input class="form-input" password model:value="{{pwd}}" placeholder="输入登录密码" placeholder-class="input-ph"/>
+    </view>
+  </view>
+
+  <!-- 关联方表单 -->
+  <view class="form-area" wx:if="{{userType === 'relation'}}">
+    <view class="form-item">
+      <text class="form-label">关联方姓名</text>
+      <input class="form-input" model:value="{{relName}}" placeholder="填写登记的关联人姓名" placeholder-class="input-ph"/>
+    </view>
+    <view class="form-item">
+      <text class="form-label">关联方手机号</text>
+      <input class="form-input" model:value="{{relPhone}}" placeholder="填写登记的关联人手机号" placeholder-class="input-ph"/>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <button class="btn-primary" bindtap="doLogin">登录</button>
+    <button class="btn-wechat" bindtap="wxLogin">微信一键登录</button>
+  </view>
+
+  <view class="register-tip" wx:if="{{userType === 'user'}}">
+    <text>还没有账号？</text>
+    <text class="link-text" bindtap="goRegister">前往注册</text>
+  </view>
+</view>

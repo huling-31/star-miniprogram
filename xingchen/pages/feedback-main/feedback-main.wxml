@@ -1,0 +1,20 @@
+<view class="wrap">
+  <view class="title">用户情绪记录</view>
+  <view class="tip">仅可查看情绪指标，无法查看原始倾诉内容</view>
+
+  <view class="record-box">
+    <block wx:for="{{historyList}}" wx:key="index">
+      <view class="record-item">
+        <view>记录时间：{{item.time}}</view>
+        <view>情绪指数：{{item.level}}</view>
+        <view>情绪标签：{{item.tag}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="divider"></view>
+  <view class="sub-title">写下你的关心留言</view>
+  <textarea model:value="{{feedbackText}}" placeholder="写下想传递给对方的话" class="textarea"></textarea>
+  <button bindtap="submitFeedback" class="btn">提交留言</button>
+  <button bindtap="back" class="btn back-btn">返回</button>
+</view>

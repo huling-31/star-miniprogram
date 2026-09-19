@@ -1,0 +1,22 @@
+<view class="main-container">
+  <view class="info-card">
+    <view class="title">关联方信息</view>
+    <view class="info-line">昵称：{{relationInfo.nick}}</view>
+    <view class="info-line">联系电话：{{relationInfo.phone}}</view>
+    <view class="info-line">账号：{{relationInfo.account}}</view>
+  </view>
+
+  <view class="chart-wrap">
+    <view class="chart-title">用户情绪负荷趋势</view>
+    <canvas canvas-id="relationCanvas" class="canvas"></canvas>
+    <view class="chart-desc">橙色线：情绪负荷｜浅灰区域：普通人情绪基线参考区间</view>
+  </view>
+
+  <view class="record-card">
+    <view class="card-title">填写你的观察反馈</view>
+    <textarea class="textarea" placeholder="写下你观察到的状态、干预行动、备注..." bindinput="inputFeedback" value="{{feedbackText}}"></textarea>
+    <button class="save-btn" bindtap="saveFeedback">保存反馈记录</button>
+  </view>
+
+  <button class="back-btn" bindtap="goBack">返回</button>
+</view>

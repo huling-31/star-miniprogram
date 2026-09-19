@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/call/call",
+    "pages/report/report",
+    "pages/feedback-login/feedback-login",
+    "pages/feedback-main/feedback-main"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff3d9",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
+
+

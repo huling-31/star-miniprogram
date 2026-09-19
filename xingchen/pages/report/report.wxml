@@ -1,0 +1,62 @@
+<view class="report-wrap">
+  <view class="report-title">今日情绪数据</view>
+
+  <!-- 图表区域 上1下2布局 -->
+  <view class="chart-top">
+    <view class="chart-card">
+      <view class="chart-name">情绪波动折线图</view>
+      <view class="canvas-box">
+        <canvas canvas-id="lineChart"></canvas>
+      </view>
+    </view>
+  </view>
+  <view class="chart-row">
+    <view class="chart-card">
+      <view class="chart-name">情绪强度柱状图</view>
+      <view class="canvas-box">
+        <canvas canvas-id="barChart"></canvas>
+      </view>
+    </view>
+    <view class="chart-card">
+      <view class="chart-name">情绪雷达指标</view>
+      <view class="canvas-box">
+        <canvas canvas-id="radarChart"></canvas>
+      </view>
+    </view>
+  </view>
+
+  <!-- 表格，完善边框、指标数值 -->
+  <view class="table-wrap">
+    <view class="table-row table-header">
+      <view class="table-cell">情绪指标</view>
+      <view class="table-cell">本次检测值</view>
+      <view class="table-cell">参考标准区间</view>
+    </view>
+    <view class="table-row">
+      <view class="table-cell">情绪活力</view>
+      <view class="table-cell">{{emotionVal}}</view>
+      <view class="table-cell">60 ~ 100</view>
+    </view>
+    <view class="table-row">
+      <view class="table-cell">内心压抑感</view>
+      <view class="table-cell">{{depressVal}}</view>
+      <view class="table-cell">0 ~ 40</view>
+    </view>
+    <view class="table-row">
+      <view class="table-cell">情绪波动幅度</view>
+      <view class="table-cell">{{waveVal}}</view>
+      <view class="table-cell">20 ~ 70</view>
+    </view>
+  </view>
+
+  <!-- 加长暖心话语 -->
+  <view class="warm-text">
+    <text>{{warmWords}}</text>
+  </view>
+
+  <!-- 页面最底端双按钮 -->
+  <view class="btn-group">
+    <view class="btn-left" bindtap="goHome">返回主页</view>
+    <view class="btn-right" bindtap="goHistory">历史情绪报告</view>
+  </view>
+</view>

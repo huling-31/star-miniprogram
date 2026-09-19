@@ -1,0 +1,112 @@
+page {
+  background: #fff3d9;
+}
+
+.register-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff3d9;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+}
+
+/* 标题 */
+.header {
+  margin-top: 90rpx;
+  margin-bottom: 60rpx;
+  text-align: center;
+}
+.title-main {
+  font-size: 64rpx;
+  color: #8c5d2b;
+  font-weight: 600;
+  letter-spacing:6rpx;
+  margin-bottom:16rpx;
+}
+.title-sub {
+  font-size: 28rpx;
+  color: #b08a5a;
+  line-height:1.5;
+}
+
+/* 表单整体 */
+.form-area {
+  width:100%;
+}
+.form-item {
+  margin-bottom:32rpx;
+}
+.form-label {
+  display:block;
+  font-size:30rpx;
+  color:#8c5d2b;
+  margin-bottom:14rpx;
+  padding-left:10rpx;
+}
+.form-input {
+  width:100%;
+  height:100rpx;
+  background:#ffffff;
+  border-radius:24rpx;
+  padding:0 32rpx;
+  box-sizing:border-box;
+  font-size:32rpx;
+  color:#5a3a1a;
+  box-shadow:0 4rpx 12rpx rgba(140,93,43,0.06);
+}
+.input-ph {
+  color:#c9b08a;
+  font-size:30rpx;
+}
+
+/* 单选框布局 */
+.radio-group {
+  display:flex;
+  justify-content: space-between;
+  padding:0 20rpx;
+}
+.radio-item {
+  display:flex;
+  align-items:center;
+  font-size:30rpx;
+  color:#8c5d2b;
+}
+.radio-item radio {
+  margin-right:12rpx;
+}
+
+/* 提交注册按钮，文字居中，字号颜色优化 */
+.btn-area {
+  width:100%;
+  margin-top:40rpx;
+}
+.btn-submit {
+  width:100%;
+  height:100rpx;
+  background: #f2a858;
+  color: #ffffff;
+  font-size:36rpx;
+  font-weight:500;
+  border-radius:50rpx;
+  border:none;
+  letter-spacing:6rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.btn-submit::after {
+  border: none;
+}
+
+/* 底部跳转 */
+.login-tip {
+  margin-top:40rpx;
+  text-align:center;
+  font-size:28rpx;
+  color:#a07038;
+}
+.link-text {
+  color:#e08a5a;
+  margin-left:8rpx;
+}

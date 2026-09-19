@@ -1,0 +1,25 @@
+<view class="history-wrap">
+  <view class="history-title">历史情绪报告</view>
+  <!-- 滚动列表区域 -->
+  <scroll-view scroll-y class="list-scroll">
+    <block wx:if="{{historyList.length > 0}}">
+      <view class="item-card" wx:for="{{historyList}}" wx:key="date" bindtap="goDetail" data-item="{{item}}">
+        <view class="item-date">{{item.date}}</view>
+        <view class="item-row">
+          <text>情绪指数：</text>
+          <text>{{item.score}}</text>
+        </view>
+        <view class="item-row">
+          <text>星辰陪伴回复：</text>
+          <text>{{item.reply}}</text>
+        </view>
+      </view>
+    </block>
+    <view class="empty-tip" wx:else>
+      暂无历史记录，完成一次倾诉即可生成报告
+    </view>
+  </scroll-view>
+  <view class="btn-bottom">
+    <view class="btn-back" bindtap="goHome">返回主页</view>
+  </view>
+</view>

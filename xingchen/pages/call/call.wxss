@@ -1,0 +1,189 @@
+page {
+  background: #fff3d9;
+}
+
+.call-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff3d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*左上角返回*/
+.top-left-back {
+  position: absolute;
+  top: 60rpx;
+  left: 40rpx;
+  display: flex;
+  align-items: center;
+  color: #8c5d2b;
+  font-size: 28rpx;
+  z-index: 10;
+}
+.back-icon {
+  font-size: 48rpx;
+  line-height:1;
+  margin-right:6rpx;
+}
+.back-text {
+  font-size:28rpx;
+  color:#8c5d2b;
+}
+
+/*顶部星辰头像区域*/
+.top-section {
+  width: 100%;
+  height: 26vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top:30rpx;
+}
+.star-avatar {
+  width:130rpx;
+  height:130rpx;
+  border-radius:50%;
+  background: linear-gradient(135deg,#ffd28a,#f2a858);
+  color:#fff;
+  font-size:48rpx;
+  font-weight:500;
+  text-align:center;
+  line-height:130rpx;
+  box-shadow:0 18rpx 36rpx rgba(242,168,88,0.3);
+}
+.star-name {
+  margin-top:16rpx;
+  font-size:36rpx;
+  color:#8c5d2b;
+  font-weight:500;
+}
+.star-sub {
+  margin-top:10rpx;
+  font-size:24rpx;
+  color:#a07038;
+  text-align:center;
+  padding:0 40rpx;
+  line-height:1.5;
+}
+
+/*声波区域，缩小尺寸*/
+.wave-section {
+  width:100%;
+  height:130rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10rpx;
+  margin-bottom:50rpx;
+}
+.wave-bar {
+  width:8rpx;
+  background:linear-gradient(to top,#f2a858,#ffd28a,#f2a858);
+  border-radius:4rpx;
+  animation:waveMove 2.4s infinite ease-in-out;
+  animation-delay:calc(var(--i)*0.1s);
+}
+.wave-bar:nth-child(1) { height:30rpx; }
+.wave-bar:nth-child(2) { height:55rpx; }
+.wave-bar:nth-child(3) { height:75rpx; }
+.wave-bar:nth-child(4) { height:45rpx; }
+.wave-bar:nth-child(5) { height:90rpx; }
+.wave-bar:nth-child(6) { height:60rpx; }
+.wave-bar:nth-child(7) { height:110rpx; }
+.wave-bar:nth-child(8) { height:70rpx; }
+.wave-bar:nth-child(9) { height:120rpx; }
+.wave-bar:nth-child(10) { height:70rpx; }
+.wave-bar:nth-child(11) { height:110rpx; }
+.wave-bar:nth-child(12) { height:60rpx; }
+.wave-bar:nth-child(13) { height:90rpx; }
+.wave-bar:nth-child(14) { height:45rpx; }
+.wave-bar:nth-child(15) { height:75rpx; }
+.wave-bar:nth-child(16) { height:55rpx; }
+.wave-bar:nth-child(17) { height:30rpx; }
+
+@keyframes waveMove {
+  0%,100% {
+    transform:scaleY(0.4);
+    opacity:0.5;
+  }
+  50% {
+    transform:scaleY(1.1);
+    opacity:1;
+  }
+}
+
+/*提示文字区域*/
+.tip-section {
+  margin-bottom:60rpx;
+  text-align:center;
+}
+.tip-top {
+  font-size:32rpx;
+  color:#8c5d2b;
+  font-weight:500;
+  margin-bottom:6rpx;
+}
+.tip-bottom {
+  font-size:24rpx;
+  color:#a07038;
+}
+
+/*底部按钮（缩小）*/
+.btn-section {
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:0 100rpx;
+  box-sizing:border-box;
+  margin-top:auto;
+  padding-bottom:60rpx;
+}
+.circle-btn {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.btn-icon-box {
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 14rpx 28rpx rgba(0,0,0,0.07);
+}
+.end-icon {
+  background:#e07a5f;
+}
+.record-icon {
+  background:#b5c98a;
+}
+.record-icon.recording {
+  background:#8fae5c;
+  animation:pulse 1s infinite;
+}
+.phone-icon {
+  font-size:38rpx;
+  color:#fff;
+}
+.btn-label {
+  margin-top:16rpx;
+  font-size:24rpx;
+  color:#8c5d2b;
+}
+
+@keyframes pulse {
+  0%,100% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.08);
+  }
+}

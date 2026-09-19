@@ -1,0 +1,4 @@
+# 小程序缓存
+project.config.json
+node_modules
+.DS_Store

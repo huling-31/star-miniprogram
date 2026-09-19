@@ -1,0 +1,94 @@
+.report-wrap{
+  width:100%;
+  min-height:100vh;
+  background:#fff3d9;
+  padding:30rpx;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+}
+.report-title{
+  text-align:center;
+  font-size:34rpx;
+  color:#5b3a1a;
+  margin-bottom:24rpx;
+}
+.chart-top{
+  width:100%;
+  margin-bottom:16rpx;
+}
+.chart-row{
+  display:flex;
+  gap:16rpx;
+}
+.chart-card{
+  flex:1;
+  background:#fff;
+  border-radius:20rpx;
+  padding:16rpx;
+}
+.chart-name{
+  text-align:center;
+  font-size:24rpx;
+  color:#5b3a1a;
+  margin-bottom:8rpx;
+}
+.canvas-box{
+  width:100%;
+  height:200rpx;
+}
+canvas{
+  width:100%;
+  height:100%;
+}
+.table-wrap{
+  margin:24rpx 0;
+  background:#fff;
+  border-radius:16rpx;
+  overflow:hidden;
+}
+.table-row{
+  display:flex;
+}
+.table-header{
+  background-color:#ffe9c4;
+}
+.table-cell{
+  flex:1;
+  text-align:center;
+  padding:18rpx 8rpx;
+  font-size:24rpx;
+  color:#5b3a1a;
+  border:1.5rpx solid #f2d299;
+}
+.warm-text{
+  font-size:26rpx;
+  color:#5b3a1a;
+  line-height:1.8;
+  text-align:center;
+  padding:16rpx 10rpx;
+  margin-bottom:32rpx;
+}
+.btn-group{
+  display:flex;
+  gap:20rpx;
+  width:100%;
+  margin-top:auto;
+  padding-bottom:36rpx;
+}
+.btn-left,.btn-right{
+  flex:1;
+  text-align:center;
+  padding:20rpx 0;
+  border-radius:99rpx;
+  font-size:26rpx;
+}
+.btn-left{
+  background:#ffe9c4;
+  color:#5b3a1a;
+  border:2rpx solid #f2d299;
+}
+.btn-right{
+  background:#f2a85a;
+  color:#fff;
+}

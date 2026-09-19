@@ -1,0 +1,16 @@
+<view class="wrap">
+  <view class="title">关联方入口</view>
+  <view class="tip">仅备案的亲友、老师可登录查看情绪记录</view>
+
+  <view class="form-item">
+    <text>关联方账号</text>
+    <input model:value="{{relAccount}}" placeholder="输入备案账号"/>
+  </view>
+  <view class="form-item">
+    <text>联系电话</text>
+    <input model:value="{{relPhone}}" placeholder="输入备案手机号"/>
+  </view>
+
+  <button bindtap="loginCheck" class="btn">登录查看记录</button>
+  <button bindtap="backHome" class="btn back-btn">返回</button>
+</view>

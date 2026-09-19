@@ -1,0 +1,23 @@
+<view class="wrap">
+  <view class="title">写下暖心留言</view>
+  <view class="desc">写下想对倾诉者说的话，给予一份温柔的鼓励</view>
+
+  <textarea class="msg-area" placeholder="请在这里输入暖心话语……" value="{{msgContent}}" bindinput="onInput"></textarea>
+
+  <view class="btn-group">
+    <view class="btn-cancel" bindtap="goBack">返回</view>
+    <view class="btn-submit" bindtap="submitMsg">提交留言</view>
+  </view>
+
+  <!-- 新增：已有的暖心留言列表区域 -->
+  <view class="list-title">过往暖心留言</view>
+  <scroll-view scroll-y class="msg-list">
+    <view wx:if="{{messageList.length===0}}" class="empty-hint">
+      暂时还没有留言记录
+    </view>
+    <view wx:for="{{messageList}}" wx:key="index" class="msg‑item">
+      <view class="msg-date">{{item.date}}</view>
+      <view class="msg-text">{{item.content}}</view>
+    </view>
+  </scroll-view>
+</view>

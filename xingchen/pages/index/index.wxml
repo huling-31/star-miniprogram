@@ -1,0 +1,87 @@
+<view class="index-wrap">
+  <!-- 顶部标题栏 -->
+  <view class="top-bar">
+    <view class="avatar-box">
+      <view class="avatar-img">星</view>
+      <view class="name-box">
+        <view class="name-title">星辰</view>
+        <view class="name-sub">AI 情绪陪伴助手</view>
+      </view>
+    </view>
+    <view class="top-right">
+      <view class="icon-btn" bindtap="goCall">
+        <text class="icon-font">📞</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 中间聊天区域：动态向上滚动动画背景 -->
+  <view class="chat-scroll">
+    <view class="chat-list" style="transform: translateY({{translateY}}rpx);">
+      <view class="date-tip">今天</view>
+
+      <view class="msg-row ai-row">
+        <view class="msg-avatar">星</view>
+        <view class="msg-bubble ai-bubble">累了可以慢慢说，不用强迫自己振作。</view>
+      </view>
+
+      <view class="msg-row user-row">
+        <view class="msg-bubble user-bubble">我最近有点累，好像怎么都开心不起来。</view>
+      </view>
+
+      <view class="msg-row ai-row">
+        <view class="msg-avatar">星</view>
+        <view class="msg-bubble ai-bubble">我知道这种感觉沉重，你不需要立刻好起来。</view>
+      </view>
+
+      <view class="msg-row user-row">
+        <view class="msg-bubble user-bubble">有时候会觉得自己很没用。</view>
+      </view>
+
+      <view class="msg-row ai-row">
+        <view class="msg-avatar">星</view>
+        <view class="msg-bubble ai-bubble">你不是没用，只是正在经历一段很难的日子。</view>
+      </view>
+
+      <view class="msg-row user-row">
+        <view class="msg-bubble user-bubble">我怕自己一直这样走不出来。</view>
+      </view>
+
+      <view class="msg-row ai-row">
+        <view class="msg-avatar">星</view>
+        <view class="msg-bubble ai-bubble">慢一点也没关系，你已经在很努力地靠近光亮了。</view>
+      </view>
+
+      <view class="msg-row user-row">
+        <view class="msg-bubble user-bubble">谢谢你愿意听我说这些。</view>
+      </view>
+
+      <view class="msg-row ai-row">
+        <view class="msg-avatar">星</view>
+        <view class="msg-bubble ai-bubble">我一直都在，夜晚再长，也会有星光陪你等到天亮。</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部输入栏 -->
+  <view class="input-bar">
+    <view class="input-box">
+      <text class="input-icon">🎤</text>
+      <input class="input-placeholder" placeholder="我想对你说..." placeholder-class="input-placeholder-text" disabled />
+      <text class="input-icon">➤</text>
+    </view>
+  </view>
+
+  <!-- 底部三选项卡 -->
+  <view class="tab-bar">
+    <view class="tab-item" bindtap="goCall">
+      <view class="tab-label">开启语音对话</view>
+    </view>
+    <view class="tab-item" bindtap="goTodayReport">
+      <view class="tab-label">今日情绪数据</view>
+    </view>
+    <view class="tab-item" bindtap="goHistoryReport">
+      <view class="tab-label">历史情绪报告</view>
+    </view>
+  </view>
+</view>

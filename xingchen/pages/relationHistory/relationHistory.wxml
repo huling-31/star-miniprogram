@@ -1,0 +1,24 @@
+<view class="wrap">
+  <view class="page-title">情绪历史列表</view>
+  <scroll-view scroll-y class="scroll-list">
+    <!-- 有记录的时候渲染列表 -->
+    <view wx:if="{{historyList.length > 0}}">
+      <view class="item-card" wx:for="{{historyList}}" wx:key="index" bindtap="goDetail" data-index="{{index}}">
+        <view class="item-date">{{item.date}}</view>
+        <view class="item-score">情绪指数：{{item.score}}</view>
+        <view class="item-brief">{{item.reply}}</view>
+        <view class="tip-text">点击查看完整报告</view>
+      </view>
+    </view>
+    <!-- 无记录的提示 -->
+    <view wx:else class="empty-tip">
+      当前尚未存储记录
+    </view>
+  </scroll-view>
+
+  <!-- 底部左右双按钮区域 -->
+  <view class="bottom-btn-group">
+    <view class="btn-left" bindtap="goHealthData">用户健康数据</view>
+    <view class="btn-right" bindtap="goWarmMessage">暖心留言入口</view>
+  </view>
+</view>

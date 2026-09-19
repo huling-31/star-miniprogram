@@ -1,0 +1,26 @@
+<view class="login-container">
+  <view class="card">
+    <view class="card-title">关联方身份登记</view>
+    <view class="tip">仅用户授权的家人、老师、好友可进入</view>
+
+    <view class="form-item">
+      <view class="label">你的昵称</view>
+      <input class="input" placeholder="请输入昵称" bindinput="inputNick" value="{{nick}}"/>
+    </view>
+    <view class="form-item">
+      <view class="label">联系电话</view>
+      <input class="input" placeholder="请输入手机号" bindinput="inputPhone" value="{{phone}}"/>
+    </view>
+    <view class="form-item">
+      <view class="label">账号</view>
+      <input class="input" placeholder="关联账号" bindinput="inputAccount" value="{{account}}"/>
+    </view>
+    <view class="form-item">
+      <view class="label">访问密码</view>
+      <input class="input" password placeholder="输入访问密码" bindinput="inputPwd" value="{{pwd}}"/>
+    </view>
+
+    <button class="submit-btn" bindtap="checkAuth">提交并验证身份</button>
+    <button class="back-btn" bindtap="goBack">返回首页</button>
+  </view>
+</view>

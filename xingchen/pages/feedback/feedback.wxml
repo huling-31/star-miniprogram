@@ -1,0 +1,13 @@
+<view class="index-container">
+  <view class="header">
+    <!-- 绑定点击事件，用来触发隐藏入口 -->
+    <view class="title" bindtap="secretEntryTap">星辰</view>
+    <view class="sub-title">温柔的情绪陪伴空间</view>
+  </view>
+
+  <view class="btn-group">
+    <button class="main-btn" bindtap="goCall">进入语音陪伴</button>
+    <button class="main-btn" bindtap="goReport">查看我的情绪记录</button>
+  </view>
+</view>
+

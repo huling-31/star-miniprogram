@@ -1,0 +1,96 @@
+page {
+  background: #fff3d9;
+}
+
+.wrap {
+  padding: 60rpx 40rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 44rpx;
+  color: #8c5d2b;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.desc {
+  text-align: center;
+  font-size: 28rpx;
+  color: #947048;
+  margin-bottom: 60rpx;
+}
+
+.msg-area {
+  background: #ffffff;
+  border-radius: 20rpx;
+  min-height: 360rpx;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.btn-group {
+  display: flex;
+  gap: 30rpx;
+  margin-top: 60rpx;
+}
+
+.btn-cancel {
+  flex: 1;
+  border: 2rpx solid #ddc2a3;
+  border-radius: 99rpx;
+  text-align: center;
+  padding: 24rpx 0;
+  font-size: 30rpx;
+  color: #8c5d2b;
+  background: #ffffff;
+}
+
+.btn-submit {
+  flex: 1;
+  background: #8c5d2b;
+  border-radius: 99rpx;
+  text-align: center;
+  padding: 24rpx 0;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+
+.list-title {
+  font-size: 34rpx;
+  color: #8c5d2b;
+  margin-top: 60rpx;
+  margin-bottom: 24rpx;
+  font-weight: bold;
+}
+
+.msg-list {
+  min-height: 200rpx;
+}
+
+.msg-item {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.msg-date {
+  font-size: 24rpx;
+  color: #b08960;
+  margin-bottom: 12rpx;
+}
+
+.msg-text {
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.empty-hint {
+  text-align: center;
+  font-size: 28rpx;
+  color: #a08060;
+  padding: 60rpx 0;
+}

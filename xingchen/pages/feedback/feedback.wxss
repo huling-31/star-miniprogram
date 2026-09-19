@@ -1,0 +1,31 @@
+.index-container {
+  width:100%;
+  height:100vh;
+  background-color:#fff3d9;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:160rpx;
+  box-sizing:border-box;
+}
+.title{
+  font-size:60rpx;
+  color:#8c5d2b;
+}
+.sub-title{
+  font-size:28rpx;
+  color:#a07038;
+  margin:16rpx 0 120rpx;
+}
+.main-btn{
+  width: 520rpx;
+  height:120rpx;
+  border-radius:60rpx;
+  background-color:#f2a85a;
+  color:#fff;
+  font-size:32rpx;
+  margin-bottom:40rpx;
+}
+.main-btn::after{
+  border:none;
+}

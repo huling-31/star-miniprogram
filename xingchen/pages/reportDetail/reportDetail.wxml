@@ -1,0 +1,31 @@
+<view class="wrap">
+  <view class="title">单次情绪详细分析报告</view>
+  <view class="report-card">
+    <view class="row"><text class="lab">报告日期：</text>{{curItem.date}}</view>
+    <view class="row"><text class="lab">情绪指数：</text>{{curItem.score}}</view>
+    <view class="analysis-block">
+      <view class="sub‑title">情绪分析</view>
+      <view class="analysis-text">{{curItem.summary}}</view>
+    </view>
+    <view class="warn-tip">⚠️本报告仅情绪监测参考，不作为医疗诊断。如情况严重，请寻求专业心理干预。</view>
+  </view>
+
+  <view class="msg-input-area">
+    <view class="sub‑title">写下鼓励留言</view>
+    <textarea class="msg‑ta" model:value="{{inputMsg}}" placeholder="写下安慰、鼓励的话语"></textarea>
+    <button class="btn‑submit" bindtap="submitMsg">提交留言</button>
+  </view>
+
+  <view class="history‑msg‑block" wx:if="{{curItem.relationMsgList.length>0}}">
+    <view class="sub‑title">已留存的历史留言</view>
+    <view class="msg‑item" wx:for="{{curItem.relationMsgList}}" wx:key="mid">
+      <view class="msg‑time">{{item.time}}</view>
+      <view class="msg‑content">{{item.content}}</view>
+    </view>
+  </view>
+
+  <view class="bottom‑btn‑group">
+    <button class="btn‑one" bindtap="viewFullReport">报告详情</button>
+    <button class="btn‑two" bindtap="scrollToMsg">鼓励留言</button>
+  </view>
+</view>

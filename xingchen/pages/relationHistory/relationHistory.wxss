@@ -1,0 +1,72 @@
+page{
+  background:#fff3d9;
+}
+.wrap{
+  padding:40rpx;
+}
+.page-title{
+  text-align:center;
+  font-size:42rpx;
+  color:#8c5d2b;
+  font-weight:bold;
+  margin-bottom:40rpx;
+}
+.scroll-list{
+  height:calc(100vh - 260rpx);
+}
+.item-card{
+  background:#ffffff;
+  border-radius:24rpx;
+  padding:32rpx;
+  margin-bottom:30rpx;
+}
+.item-date{
+  font-size:30rpx;
+  color:#8c5d2b;
+  margin-bottom:12rpx;
+}
+.item-score{
+  font-size:28rpx;
+  margin-bottom:12rpx;
+}
+.item-brief{
+  font-size:26rpx;
+  color:#555;
+  line-height:1.5;
+}
+.tip-text{
+  margin-top:20rpx;
+  font-size:24rpx;
+  color:#e08a5a;
+}
+.empty-tip{
+  text-align:center;
+  margin-top:200rpx;
+  font-size:30rpx;
+  color:#8c5d2b;
+}
+.bottom-btn-group{
+  display:flex;
+  gap:30rpx;
+  padding:30rpx 40rpx;
+  box-sizing:border-box;
+}
+.btn-left{
+  flex:1;
+  background:#fff;
+  text-align:center;
+  padding:24rpx 0;
+  border-radius:99rpx;
+  font-size:30rpx;
+  color:#8c5d2b;
+  border:2rpx solid #e6d2b8;
+}
+.btn-right{
+  flex:1;
+  background:#8c5d2b;
+  text-align:center;
+  padding:24rpx 0;
+  border-radius:99rpx;
+  font-size:30rpx;
+  color:#fff;
+}

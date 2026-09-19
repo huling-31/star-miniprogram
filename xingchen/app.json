@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/call/call",
+    "pages/report/report",
+    "pages/historyReport/historyReport",
+    "pages/reportDetail/reportDetail",
+    "pages/relationHistory/relationHistory",
+    "pages/warmMsg/warmMsg"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff3d9",
+    "navigationBarTitleText": "星辰‑情绪陪伴",
+    "navigationBarTextStyle":"black"
+  },
+  "style":"v2",
+  "sitemapLocation":"sitemap.json"
+}

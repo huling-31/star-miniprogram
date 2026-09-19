@@ -1,0 +1,10 @@
+page {
+  background-color: #0f1426;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+button {
+  background-color: #343e75;
+  color:#fff;
+  border:none;
+}
